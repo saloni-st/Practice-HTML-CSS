@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tribute Website | A.P.J Abdul Kalam</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Employee {
+    int employee_id;
+    String name;
+    double basic_salary;
+
+    public Employee( int employee_id,String name,double basic_salary){
+        this. employee_id= employee_id;
+        this.name=name;
+        this.basic_salary=basic_salary;
+    }
+        void displayDetails(){
+            System.out.println("Employee_id:  :"+employee_id);
+            System.out.println("Employee name :"+name);
+            System.out.println("Basic Salary :"basic_salary);
+        }
+    }
+
+    class Developer extends Employee{
+        String project_name;
+        double bonus;
+
+        public Devloper(int employee_id,String name,double basic_salary,String project_name,double bonus){
+            super.displayDetails();
+            System.out.println("Project name :"+project_name);
+            System.out.println("Bonus:"+bonus);
+
+            double totalsalary = basic_salary+bonus;
+            System.out.println("Total :"totalsalary);
+        }
+    }
+    class Main {
+        public static void main(String args[]){
+            Developer dv = new Developer();
+            dv.displayDetails(1,"Sia",4567.987,"ITk",2999);
+        }
+    }
+
+}
